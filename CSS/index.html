@@ -2,21 +2,105 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Login</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Meu portal de notícias</title>
+    <link rel="stylesheet" href="./9.1 Main.css" />
 </head>
 <body>
-    <h1>Formulário de login</h1>
-    <form>
-        <label for="usuário">Usuário: </label>
-        <input id="usuário" type="text"/>
-        <br />
-        <label for="senha">Senha: </label>
-        <input id="senha" type="password"/>
-        <br />
-        <button class="botão1" type="submit">Enviar</button>
-        <button class="botão2" type="reset">Apagar</button>
-    </form>
+    <header>
+        <div class="container">
+            <h1>Meu portal de notícias</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#" title="Ir para a seção de esportes">Esportes</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Ir para a seção de economia">Economia</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>    
+    </header>
+    <section id="sports">
+        <div class="container">
+            <h2>Esportes</h2>
+        <div class="articles">
+            <article>
+                <img src="https://img.freepik.com/fotos-premium/bola-de-futebol-no-gramado-no-dia-de-verao-ensolarado-close-up-bola-branca-e-preta-na-grama-verde-copie-o-espaco-conceito-de-recreacao-ativa-entretenimento-esportivo-na-natureza_180532-1058.jpg" alt="Bola de futebol no gramado" />
+                <header>
+                    <time class=""creation-date">13/07/2022 as 12:35</time>
+                </header>
+                <h3>Grande clássico na noite de hoje</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quo hic dolorum repellendus eos, aspernatur tempore, vitae repellat consequuntur iusto ducimus? Sit iure pariatur nostrum earum eaque laudantium animi illum.
+                </p>
+                <a href="#" title=""Leia a notícia completa">Ler mais</a>
+            </article>
+            <article>
+                <img src="https://static.vecteezy.com/ti/fotos-gratis/p2/12720499-jogador-de-futebol-americano-correndo-com-a-bola-gratis-foto.jpg" alt="Jogador de futebol americano correndo com a bola" />   <br />
+                <header>
+                    <time>12/07/2022 as 12:35</time>
+                </header>
+                <h3>Noite do Superbowl</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit ab excepturi a odit nisi consequatur quia totam praesentium mollitia nesciunt at veniam nostrum iure provident, quis cum unde reiciendis blanditiis.
+                </p>
+                <a href="#" title="Leia a notícia completa">Ler mais</a>
+            </article>
+            <article>
+                <img src="https://img.freepik.com/fotos-premium/vista-aerea-de-uma-quadra-de-basquete-com-as-palavras-a-quadra_835197-158.jpg" title="Vista aérea de uma quadra de basquete" />
+                <header>
+                    <time>13/07/2022 as 12:35</time>
+                </header>
+                <h3>Notícia sobre a NBA</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error temporibus cupiditate reprehenderit magnam sapiente, quibusdam possimus magni modi unde voluptate officiis cum itaque at animi totam. Dolores assumenda sunt ipsa.
+                </p>
+                <a href="#" title=""Leia a notícia completa">Ler mais</a>
+            </article>
+        </div>
+        </div>
+    </section>
+    <section id ="economy">
+        <div class="container">
+            <h2>Economia</h2>
+        <div class="articles">
+            <article>
+                <img src="https://img.freepik.com/fotos-premium/muitos-dolares-de-fundo_180633-231.jpg" alt=""Muitos dólares" />
+                <header>
+                    <time>13/07/2022 as 12:35</time>
+                </header>
+                <h3>Dólar em alta de 0.50%</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur eos facere corrupti error iure repudiandae possimus placeat! Dolore accusantium possimus explicabo harum veritatis maxime, nobis iste amet sunt voluptatibus eius?
+                </p>
+                <a href="#" title="Leia a notícia completa">Ler mais</a>
+            </article>
+            <article>
+                <img src="https://www.melhorcambio.com/blog/wp-content/uploads/2015/12/Foto_nota_euro.jpg" alt="Várias notas de euro" />
+                <header>
+                    <time>13/07/2022 as 12:35</time>
+                </header>
+                <h3>Euro em queda de 0.40%</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, aperiam! Atque tempora incidunt natus minus culpa ducimus! Temporibus facilis quibusdam, voluptas vero perspiciatis expedita odit architecto, modi, quaerat non consequuntur!
+                </p>
+            </article>
+            <article>
+                <img src="https://s1.static.brasilescola.uol.com.br/be/conteudo/images/tipos-de-plataformas.jpg" alt="Extração de petróleo" />
+                <header>
+                    <time>13/07/2022 as 12:35</time>
+                </header>
+                <h3>Alta no preço do barril de petróleo</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aliquam maiores quia veniam cumque eveniet deleniti quam eligendi cupiditate. Ullam asperiores quisquam ab qui tempore reiciendis a corrupti in. Vero.
+                </p>
+                <a href="#" title="Leia a notícia completa">Ler mais</a>
+            </article>
+        </div>
+        </div>
+    </section>
 </body>
 </html>
