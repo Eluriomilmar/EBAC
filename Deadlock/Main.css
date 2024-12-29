@@ -13,8 +13,8 @@ header {
 
 
 
-body {
-    font-family: "Montserrat";
+body, input, textarea {
+    font-family: "Montserrat", serif;
 }
 
 header {
@@ -95,6 +95,7 @@ form button {
     width: 320px;
     margin-bottom: 8px;
     padding: 8px;
+    font-size: 14px;
 }
 
 form textarea {
