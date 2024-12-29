@@ -10,7 +10,8 @@ body > header {
     color: #f5f6fa;
 }
 
-header .container {
+header .container,
+section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;

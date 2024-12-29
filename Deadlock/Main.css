@@ -4,38 +4,44 @@
     box-sizing: border-box;
 }
 
-header,
-section h2,
-section h3 
-form button {
-    font-family: "bungee", cursive;
-    font-weight: normal;
+header {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
-body, input, textarea {
-    font-family: "Roboto", sans-serif;
+
+
+body {
+    font-family: "Montserrat";
 }
 
 header {
     padding: 16px 0;
-    background-color: #182C61;
-    color: #ECF0F1;
+    background-color: #409c63;
+    color: #cccccc
 }
 
-header nav li{
+header nav li {
     display: inline;
     margin-left: 16px;
-    color: #ECF0F1;
+    color: #cccccc;
     font-size: 18px;
 }
 
-header nav li a{
-    color: #ECF0F1;
+header nav li a {
+    color: #cccccc;
     text-decoration: none;
 }
 
+body {
+    background-color:#333333;
+    color:#cccccc
+}
+
 .container {
-    max-width 1280px;
+    max-width: 1280px;
     width: 100%;
     margin: 0 auto;
 }
@@ -47,37 +53,17 @@ section .container {
     justify-content: space-between;
 }
 
-.brands-list img{
-    height: 24px;
+.heroes-list img {
+    height: 100px;
 }
 
-.brands-list li{
+.heroes-list li {
     display: inline;
-    margin: 8px;
+    margin: 0;
 }
 
 section .container {
-    align-items: flex-start;
-}
-
-section {
-    padding: 24px 0;
-}
-
-section h2 {
-    margin-bottom: 16px;
-}
-
-section {
-    color: #182C61
-}
-
-section p {
-    margin-bottom: 8px;
-}
-
-.store-front {
-    margin-right: 32px
+    align-items: flex-start
 }
 
 .social-links img {
@@ -85,7 +71,7 @@ section p {
 }
 
 .social-links li {
-    display: inline;
+    display:inline;
     margin-right: 8px;
 }
 
@@ -121,24 +107,40 @@ section h3 {
     margin-bottom: 16px;
 }
 
+section {
+    color: #44a569
+}
+
+section {
+    color: #4ab472
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+section h3 {
+    margin-bottom: 16px;
+}
+
 form button {
-    background-color: #182C61;
+    background-color: #4ab472;
     color: #fff;
     border: none;
     cursor: pointer;
 }
 
 form button:hover {
-    background-color: #284aa5;
+    background-color: #4ab472;
 }
 
 input:focus, 
 textarea:focus {
-    outline-color: #182C61;
+    outline-color: #4ab472;
 }
 
 footer {
-    background-color: #182C61;
+    background-color: #4ab472;
     color: #ECF0F1;
     padding: 16px 0;
 }
