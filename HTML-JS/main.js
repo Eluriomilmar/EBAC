@@ -1,48 +1,30 @@
-const form = document.getElementById("form-deposit");
-const nomeBeneficiario = document.getElementById("nome-beneficiario");
+const calculadora = document.getElementById("calculadora");
+const numA = document.getElementById("numero-a");
+const numB = document.getElementById("numero-b");
 
-function validaNome(nomeCompleto){
-    const nomeComoArray = nomeCompleto.split(" ");
-    return nomeComoArray.length >= 2;
+function comparaAB (numA, numB){
+    return numB.value > numA.value;
 }
 
-form.addEventListener("submit", function(e) {
+calculadora.addEventListener("submit", function(e){ 
     let formEValido = false;
     e.preventDefault();
+    const mensagemSucesso = `Valor ${numB.value} é maior que ${numA.value}`;
 
-    const numeroContaBeneficiario = document.getElementById("numero-conta");
-    const valorDeposito = document.getElementById("valor-deposito");
-    const descricao = document.getElementById("descrição");
-    const mensagemSucesso = `Montante de: <b>${valorDeposito.value}</b> depositado para o cliente: <b>${nomeBeneficiario.value}</b> - conta: <b>${numeroContaBeneficiario.value}</b>`;
-    
-    formEValido = validaNome(nomeBeneficiario.value)
+    formEValido = comparaAB(numA, numB);
     if (formEValido) {
         const containerMensagemSucesso = document.querySelector(".success-message");
         containerMensagemSucesso.innerHTML = mensagemSucesso;
         containerMensagemSucesso.style.display = "block";
-
-        nomeBeneficiario.value = "";
-        numeroContaBeneficiario.value = "";
-        valorDeposito.value = "";
-        descrição.value = "";
-        
-    } else{
-        nomeBeneficiario.style.border = "1px solid red";
-        document.querySelector(".error-message").style.display = "block";
-    }
-})
-
-nomeBeneficiario.addEventListener("keyup", function(e) {
-    console.log(e.target.value);
-    formEValido = validaNome(e.target.value);
-
-    if (!formEValido) {
-        nomeBeneficiario.classList.add("error");        
-        document.querySelector(".error-message").style.display = "block";
-    } else {
-        nomeBeneficiario.classList.remove("error");
         document.querySelector(".error-message").style.display = "none";
+
+        numA.value = "";
+        numB.value = "";
+        
+    }else{
+        numA.style.border = "2px solid red";
+        numB.style.border = "2px solid red";
+        document.querySelector(".error-message").style.display = "block";
+        document.querySelector(".success-message").style.display = "none";
     }
 })
-
-document.querySelector("#")
