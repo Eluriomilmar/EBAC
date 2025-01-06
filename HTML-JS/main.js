@@ -17,7 +17,6 @@ calculadora.addEventListener("submit", function(e){
         containerMensagemSucesso.innerHTML = mensagemSucesso;
         containerMensagemSucesso.style.display = "block";
         document.querySelector(".error-message").style.display = "none";
-
         numA.value = "";
         numB.value = "";
         
