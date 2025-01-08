@@ -14,9 +14,9 @@
         <header>
             <h1>Agenda de contatos</h1>
         </header>
-        <form>
-            <input type="text" required placeholder ="Nome do contato">
-            <input type="number" required placeholder="Número do contato">
+        <form id="nome-telefone">
+            <input type="text" required id="nome" placeholder ="Nome do contato">
+            <input type="number" required id="telefone" placeholder="Número do contato">
             <button type="submit">Adicionar</button>
         </form>
         <table cellspacing="0">
@@ -32,11 +32,11 @@
             </thead>
             <tbody>
                 <tr>
-                    <th>
+                    <th id="esquerda">
                         Contato
                     </th>
-                    <th>
-                        +55(31)99401-4855
+                    <th id="direita">
+                        123456789
                     </th>
                 </tr>
             </tbody>
