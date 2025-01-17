@@ -7,10 +7,9 @@ $(document).ready(function(){
         $("form").slideUp();
     })
 
-    $("form").on("submit", function(e) {;
+    $("form").on("submit", function(e) {
         e.preventDefault();
-        const enderecoDaNovaImagem = $("#endereco-imagem-nova").val();
-        const novoItem = $("<li style='display: none'></li>");
+        const novoItem = $("<li></li>");
         $(`<img src="${enderecoDaNovaImagem}" />`).appendTo(novoItem);
         $(`<div class="overlay-imagem-link">
                 <a href="${enderecoDaNovaImagem}" target="_blank" title="Ver imagem em tamanho real">
