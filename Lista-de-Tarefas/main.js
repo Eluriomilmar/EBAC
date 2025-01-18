@@ -1,14 +1,14 @@
 $(document).ready(function(){
-    $("corpo").on("submit", function(e) {
+    $("div").on("submit", function(e) {
         e.preventDefault();
-        const nomeTarefa = $("#nome-tarefa").val();
+        const novaTarefa = $("#nome-tarefa").val();
         const novoItem = $("<li></li>");
         $(`<div class="tarefas">
-                <ul>
-                    ${nomeTarefa}
-                </ul>
+                ${novaTarefa}
             </div>`).appendTo(novoItem);
-            $(novoItem).appendTo("ul");
-            $("#nome-tarefa").val("");
+        $(novoItem).appendTo("ul");
+        $("#nome-tarefa").val("");
+            
     })
+
 })
