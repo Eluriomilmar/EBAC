@@ -37,8 +37,10 @@ form button {
 .tarefas-bloco {
     justify-content: center;
     display: flex;
+    cursor: pointer;
 }
 
 .tarefas {
     margin: auto;
 }
+
