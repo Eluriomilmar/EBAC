@@ -7,7 +7,7 @@ $(document).ready(function(){
         $("form").slideUp();
     })
 
-    $("form").on("submit", function(e) {;
+    $("form").on("submit", function(e) {
         e.preventDefault();
         const enderecoDaNovaImagem = $("#endereco-imagem-nova").val();
         const novoItem = $("<li style='display: none'></li>");
