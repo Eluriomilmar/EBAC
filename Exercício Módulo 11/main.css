@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0 0;
+    border-bottom: 1px solid #000;
+}
+
+.menu-herois,
+.menu-500,
+.menu-1250,
+.menu-3000,
+.menu-6000,
+.weapons,
+.vitality,
+.spirit,
+.creeps,
+.items {
+    display: none;
+    list-style: none;
+}
+
+.menu-herois,
+.creeps,
+.items {
+    transform: translateX(15px);
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-top: 4px solid #000;
+    position: relative;
+    border: 1px solid red;
+}
+
+.items > li,
+.vitality > li,
+.spirit > li,
+.weapons > li {
+    display: flex;
+
+}
+
+.weapons > li,
+.vitality > li,
+.spirit > li {
+    transform: translateX(68px);
+    border-left: 15px;
+    padding-left: 10px;
+}
+
+.menu-500 > li,
+.menu-1250 > li,
+.menu-3000 > li,
+.menu-6000 > li {
+    transform: translateX(-50px);
+    padding-left: 25px;
+}
+
+.menu-500,
+.menu-1250,
+.menu-3000,
+.menu-6000 {
+    transform: translateX(70px);
+    border-left: 10px;
+    padding-left: 10px;
+    width: 300px;
+}
+
+.clear {
+    clear: both;
+}
+
+.menu li:hover .menu-herois,
+.menu li:hover .items,
+.menu li:hover .creeps,
+.items li:hover .weapons,
+.items li:hover .spirit,
+.items li:hover .vitality,
+.weapons li:hover .menu-500,
+.weapons li:hover .menu-1250,
+.weapons li:hover .menu-3000,
+.weapons li:hover .menu-6000,
+.vitality li:hover .menu-500,
+.vitality li:hover .menu-1250,
+.vitality li:hover .menu-3000,
+.vitality li:hover .menu-6000,
+.spirit li:hover .menu-500,
+.spirit li:hover .menu-1250,
+.spirit li:hover .menu-3000,
+.spirit li:hover .menu-6000 {
+    display: block;
+    position: absolute;
+    left: 0;
+}
